@@ -1,0 +1,15 @@
+let output=[];
+
+
+function fibonacciGenerator(n){
+	for(let i=1; i<=n; i++){
+	output[1]=0;
+	output[2]=1;
+	output.push(output[output.length-2]+output[output.length-1]);
+
+}
+return output;
+}
+
+output= fibonacciGenerator(20);
+console.log(output);
